@@ -1,0 +1,61 @@
+/* src/Register.css */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle, #3d013b, #7c3b7e);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .register-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .input {
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .button0sign {
+    width: 30%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #114fba;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button0sign:hover {
+    background-color: #45a049;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .register-title {
+      font-size: 2rem;
+    }
+  
+    input, button {
+      width: 90%;
+    }
+  }
+  
